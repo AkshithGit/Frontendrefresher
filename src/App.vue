@@ -1,9 +1,9 @@
 <template>
     <div id="container">
-        <Header title="My Cool App" action="Get started"/>
+        <Header title="My Cool App" action="Get started" colorpara="lightblue" />
     </div>
     <div id="container">
-        <Header title="Your app" action="Cool"/>
+        <Header title="Your app" action="Cool" bgcolor="darkblue" />
     </div>
 
 </template>
@@ -21,7 +21,6 @@ import Header from './Header.vue'
 <style>
 #app {
     text-align: center;
-    color: yellowgreen;
     margin-top: 60px;
 }
 #container {
