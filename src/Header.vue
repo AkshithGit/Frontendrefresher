@@ -3,7 +3,7 @@
         <h1 :style="{ color:colorpara }">
             {{ title }}
         </h1>
-        <button :style="{ background: bgcolor }">
+        <button @click="handleClick()" :style="{ background: bgcolor }">
             {{ action }}
         </button>
     </header>
@@ -17,7 +17,12 @@ export default {
         action: String,
         colorpara: String,
         bgcolor: String
-    } 
+    },
+    methods: {
+    handleClick() {
+        console.log("button Clicked")
+    }
+}
 }
 </script>
 
