@@ -1,19 +1,21 @@
 <template>
     <div id="container">
-        <h1>
-            My Cool App
-        </h1>
-        <button>
-            Add Task
-        </button>
+        <Header title="My Cool App" action="Get started"/>
+    </div>
+    <div id="container">
+        <Header title="Your app" action="Cool"/>
     </div>
 
 </template>
 
 <script>
 export default {
-    name: 'App'
+    name: 'App',
+    components: {
+        Header
+    }
 }
+import Header from './Header.vue'
 </script>
 
 <style>
@@ -26,7 +28,7 @@ export default {
     border: 1px solid steelblue;
     padding: 30px;
     max-width: 500px;
-    margin: auto;
+    margin: 20px auto;
 }
 
 button {
